@@ -378,7 +378,7 @@ wc -l //参数I返回文件的行数
 
 再接着往下看，在第28177行，我们看到了Main.cpp：
 
-
+![title](https://raw.githubusercontent.com/excellentcx/GitNote-Images/master/GitNote_Images/2019/04/30/%E5%B0%BE%E9%83%A8-1556610968320.png)
 
 这就是预编译期间编译器所做的事情，你还记得1.4小结么？
 
@@ -438,9 +438,13 @@ g++ -S main.cpp -o main.s
 ```
 
 解释一下上述命令：选项 -S 指示编译器将程序编译成汇编代码，输出汇编语言代码后结束。上述命令将由 C++ 源码文件生成汇编语言文件 main.s，生成的汇编语言依赖于编译器的目标平台。就像这样：
-![编译](/assets/编译.png)
+
+![title](https://raw.githubusercontent.com/excellentcx/GitNote-Images/master/GitNote_Images/2019/04/30/%E7%BC%96%E8%AF%91-1556611001623.png)
+
 我们打开main.s看一下：
-![main汇编](/assets/main汇编.png)
+
+
+
 恩，我承认，我只学过汇编的皮毛。我表示这种反学术水平的语言我是看不懂的。
 幸运的是，本文的重点不在于此，我们只需要稍微了解这一过程即可。
 看到这里，也许你会这么想：”你瞧，我们已经从高级语言向汇编语言进化啦，是不是我们的程序马上就可以被计算机执行了呢？“
