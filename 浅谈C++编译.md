@@ -334,7 +334,7 @@ istream &operator>>(std::istream &is, String &st)
 g++ -E main.cpp -o main.ii
 ```
 好快，一瞬间就结束运行了
-![预处理](/assets/预处理.png)
+
 这里解释一下上述命令的含义：
 选项 -E 使 g++ 将源代码用编译预处理器处理后不再执行其他动作。-o表示文件输出，结果保存在main .ii 文件中.
 可以看到，当前目录下多出了一个叫做main,ii的预处理文件
