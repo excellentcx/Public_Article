@@ -754,12 +754,12 @@ ld-linux-x86-64.so  Linux内核库文件
 
 在一份编译好的OpenCV中，以官方编译文件为例，常见的结构如下：
 
-![OpenCV主目录](/assets/OpenCV主目录.png)
+![title](https://raw.githubusercontent.com/excellentcx/GitNote-Images/master/GitNote_Images/2019/04/30/OpenCV%E4%B8%BB%E7%9B%AE%E5%BD%95-1556611350997.png)
 
 我们需要将include文件夹，也就是头文件包含目录添加到当前项目中，这个就不解释了。
 接着，教程告诉我们，需要添加环境变量，也就是说把包含dll文件的目录添加到环境变量中去。（官方选择把dll打包编译了）
 
-![环境变量](/assets/环境变量.png)
+![title](https://raw.githubusercontent.com/excellentcx/GitNote-Images/master/GitNote_Images/2019/04/30/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F-1556611331846.png)
 
 为什么这么做呢？前文已经说过了，dll动态链接库最大的优势就是可以节约内存资源，作为大型项目的OpenCV自然也会以这种方式链接可执行的应用程序。
 什么是环境变量呢？通俗地说，环境变量可以被理解为系统级别的全局变量，这个变量一般来说指的是某个路径下的程序（dll也是一种程序）。
@@ -768,7 +768,7 @@ ld-linux-x86-64.so  Linux内核库文件
 
 紧接着，我们需要在配置文件中添加lib文件，就像这样：
 
-![添加lib](/assets/添加lib.png)
+![title](https://raw.githubusercontent.com/excellentcx/GitNote-Images/master/GitNote_Images/2019/04/30/%E6%B7%BB%E5%8A%A0lib-1556611359981.png)
 
 **既然已经有dll文件了，为啥还要添加lib文件呢？**
 俗话说得好，人总不能在一棵树上吊死不是？
