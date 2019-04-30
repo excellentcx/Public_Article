@@ -1,4 +1,4 @@
-![ldd_1.png](0)![ldd命令.png](1)![main汇编.png](2)
+![ldd_1.png](0)![ldd命令.png](1)![main汇编.png](2)![nm_String_可读.png](1)
 # 浅谈C++编译
 
 ## 问题起源
