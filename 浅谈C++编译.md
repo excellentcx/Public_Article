@@ -461,8 +461,11 @@ g++ -S main.cpp -o main.s
 ![title](https://raw.githubusercontent.com/excellentcx/GitNote-Images/master/GitNote_Images/2019/04/30/main%E6%B1%87%E7%BC%96-1556611032972.png)
 
 恩，我承认，我只学过汇编的皮毛。我表示这种反学术水平的语言我是看不懂的。
+
 幸运的是，本文的重点不在于此，我们只需要稍微了解这一过程即可。
+
 看到这里，也许你会这么想：”你瞧，我们已经从高级语言向汇编语言进化啦，是不是我们的程序马上就可以被计算机执行了呢？“
+
 Emmmmmm，也许事情没那么简单，但至少我们向前迈进了一大步！
 
 ## 3. 汇编
