@@ -767,3 +767,4 @@ ld-linux-x86-64.so  Linux内核库文件
 
 本文结束，下期见。
 
+![ldd_1.png](0)![mian行数.png](3)![ldd命令.png](1)![main汇编.png](2)![nm_main.png](4)![nm_String_可读.png](5)
