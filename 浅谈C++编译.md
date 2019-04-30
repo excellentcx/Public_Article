@@ -354,7 +354,7 @@ g++ -E main.cpp -o main.ii
 
 对于原始的main.cpp，这里只有83行代码
 
-
+![title](https://raw.githubusercontent.com/excellentcx/GitNote-Images/master/GitNote_Images/2019/04/30/mian%E8%A1%8C%E6%95%B0-1556610910750.png)
 
 但是，对于main.ii，情况就有些“大变样”了，我们使用
 
@@ -363,16 +363,22 @@ wc -l //参数I返回文件的行数
 ```
 
 查看main.ii文件，结果如下：
-![行数](/assets/行数.png)
+
+![title](https://raw.githubusercontent.com/excellentcx/GitNote-Images/master/GitNote_Images/2019/04/30/%E8%A1%8C%E6%95%B0-1556610926335.png)
+
 恩，由不到100行扩展到了28257行！
 发生了什么？我们打开文件看一下：
 这是文件头部：
-![头部](/assets/头部.png)
+
+![title](https://raw.githubusercontent.com/excellentcx/GitNote-Images/master/GitNote_Images/2019/04/30/%E5%A4%B4%E9%83%A8-1556610939402.png)
+
 如同前文所说的一样，预编译器将iostream整个文件，包括其本身引用外部文件全部添加到了main.ii里面。在第28139行，我们看到了之前写好的String.h文件
-![中部](/assets/中部.png)
+
+![title](https://raw.githubusercontent.com/excellentcx/GitNote-Images/master/GitNote_Images/2019/04/30/%E4%B8%AD%E9%83%A8-1556610955827.png)
 
 再接着往下看，在第28177行，我们看到了Main.cpp：
-![尾部](/assets/尾部.png)
+
+
 
 这就是预编译期间编译器所做的事情，你还记得1.4小结么？
 
