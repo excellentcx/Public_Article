@@ -77,7 +77,7 @@
 
 接下来，我们定位到工作目录下查看当前都有哪些文件，如图所示：
 
-![目录](/assets/目录.png)
+![title](https://raw.githubusercontent.com/excellentcx/GitNote-Images/master/GitNote_Images/2019/04/30/%E7%9B%AE%E5%BD%95-1556610756726.png)
 
 可以看到，当前目录下：
 text.md是使用Markdown编辑的本文。
