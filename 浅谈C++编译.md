@@ -713,9 +713,11 @@ main.cpp中的外部变量dd被整合到了可执行程序main的D段
 ldd main 
 ```
 
-![ldd命令](/assets/ldd命令.png)
+![title](https://raw.githubusercontent.com/excellentcx/GitNote-Images/master/GitNote_Images/2019/04/30/ldd%E5%91%BD%E4%BB%A4-1556611281596.png)
+
 再次运行上述命令：
-![ldd_1](/assets/ldd_1.png)
+
+![title](https://raw.githubusercontent.com/excellentcx/GitNote-Images/master/GitNote_Images/2019/04/30/ldd_1-1556611294062.png)
 
 ```c++
 libstdc++ .so       提供c++程序的标准库
@@ -729,7 +731,7 @@ ld-linux-x86-64.so  Linux内核库文件
 可以看到，每次动态链接库的地址都是不一样的，因为这个地址是动态定位的，这正是动态链接库的名称由来。也就是说，main函数使用到的包含在上述库文件中的符号只有在程序运行时才会被动态的装载进程序中去。
 如果程序在装在这些符号的过程中遇到了加载错误，会发生什么？
 
-![找不到dll](/assets/找不到dll.png)
+![title](https://raw.githubusercontent.com/excellentcx/GitNote-Images/master/GitNote_Images/2019/04/30/%E6%89%BE%E4%B8%8D%E5%88%B0dll-1556611305396.png)
 
 现在，你应该明白为什么会发生这种情况了吧（对于其他语言也是类似的）
 
@@ -742,7 +744,8 @@ ld-linux-x86-64.so  Linux内核库文件
 第二：程序在运行时与函数库再无瓜葛，移植方便。
 第三：浪费空间和资源，因为所有相关的目标文件与牵涉到的函数库被链接合成一个可执行文件。
 第四：静态库对程序的更新、部署和发布页会带来麻烦。如果静态库liba.lib更新了，所以使用它的应用程序都需要重新编译、发布给用户（对于玩家来说，可能是一个很小的改动，却导致整个程序重新下载，全量更新）
-![静态链接库](/assets/静态链接库.png)
+
+![title](https://raw.githubusercontent.com/excellentcx/GitNote-Images/master/GitNote_Images/2019/04/30/%E9%9D%99%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93-1556611317201.png)
 
 正因如此，现在静态库已经很少被使用了。
 不过，实际情况看起来似乎有点矛盾，我们回到问题的起点看一下。
