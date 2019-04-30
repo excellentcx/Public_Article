@@ -490,7 +490,7 @@ nm命令可以查看目标文件中的符号信息
 nm main.o
 ```
 
-
+![title](https://raw.githubusercontent.com/excellentcx/GitNote-Images/master/GitNote_Images/2019/04/30/nm%E5%91%BD%E4%BB%A4-1556611081625.png)
 
 这里有很多看起来非常杂乱的符号。在解释图片中的部分内容之前，我们先说一点别的东西。
 
@@ -627,7 +627,7 @@ public:
 g++ -c String.cpp -o String.o && nm String.o
 ```
 
-![Stringnm反编译](/assets/Stringnm反编译.png)
+
 
 ```C++
 //我们以“友好”的方式再查看一下，注意实际名称以上面的那张图片为准，这里仅仅为了方便比较
