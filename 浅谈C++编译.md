@@ -344,15 +344,18 @@ g++ -E main.cpp -o main.ii
 
 好快，一瞬间就结束运行了
 
-
+![title](https://raw.githubusercontent.com/excellentcx/GitNote-Images/master/GitNote_Images/2019/04/30/%E9%A2%84%E5%A4%84%E7%90%86-1556610850747.png)
 
 这里解释一下上述命令的含义：
 选项 -E 使 g++ 将源代码用编译预处理器处理后不再执行其他动作。-o表示文件输出，结果保存在main .ii 文件中.
 可以看到，当前目录下多出了一个叫做main,ii的预处理文件
-![预处理目录](/assets/预处理目录.png)
+
+![title](https://raw.githubusercontent.com/excellentcx/GitNote-Images/master/GitNote_Images/2019/04/30/%E9%A2%84%E5%A4%84%E7%90%86%E7%9B%AE%E5%BD%95-1556610889113.png)
 
 对于原始的main.cpp，这里只有83行代码
-![mian行数](/assets/mian行数.png)
+
+
+
 但是，对于main.ii，情况就有些“大变样”了，我们使用
 
 ```c++
