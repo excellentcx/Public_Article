@@ -356,7 +356,8 @@ g++ -E main.cpp -o main.ii
 
 对于原始的main.cpp，这里只有83行代码
 
-![mian行数](/assets/mian行数.png)
+![mian行数.png](3)
+
 但是，对于main.ii，情况就有些“大变样”了，我们使用
 
 ```c++
