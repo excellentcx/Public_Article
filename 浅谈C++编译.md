@@ -627,14 +627,15 @@ public:
 g++ -c String.cpp -o String.o && nm String.o
 ```
 
-
+![title](https://raw.githubusercontent.com/excellentcx/GitNote-Images/master/GitNote_Images/2019/04/30/Stringnm%E5%8F%8D%E7%BC%96%E8%AF%91-1556611143626.png)
 
 ```C++
 //我们以“友好”的方式再查看一下，注意实际名称以上面的那张图片为准，这里仅仅为了方便比较
 nm -C String.o
 ```
 
-![nm_String_可读](/assets/nm_String_可读.png)
+![title](https://raw.githubusercontent.com/excellentcx/GitNote-Images/master/GitNote_Images/2019/04/30/nm_String_%E5%8F%AF%E8%AF%BB-1556611177003.png)
+
 可以看出，当前文件中定义的(类)函数全部被编译器加密为特定的函数名称，并保存在了代码段，编译器保证这些名称在**链接过程**中不会发生冲突。
 此外，iostream文件中定义的函数被标记在了U段，这很正常，因为当前文件中并未提供它们的定义。
 
