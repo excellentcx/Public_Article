@@ -654,7 +654,7 @@ g++ main.o  -o main
 
 输出如下：
 
-![链接main](/assets/链接main_i567ew34o.png)
+![title](https://raw.githubusercontent.com/excellentcx/GitNote-Images/master/GitNote_Images/2019/04/30/%E9%93%BE%E6%8E%A5main-1556611214887.png)
 
 不出意外，编辑器报错了(是不是类似的场景觉得在哪里见过？)。为什么会报错呢？
 原因在于，当前文件（main.cpp）使用了不属于本文件内定义的符号，而这些符号是在外部文件中被声明和定义的，然而由于编辑器找不到这些可以链接的目标文件，（没有把String添加进来一起链接）导致链接器无法得到一个完整可执行程序。换句话说，这个可执行程序是不完整的。
@@ -674,7 +674,9 @@ g++ main.cpp String.cpp -o main
 ```
 
 这次没有报错，并且得到了可执行程序main
-![可执行main](/assets/可执行main_6ovx48g4g.png)
+
+![title](https://raw.githubusercontent.com/excellentcx/GitNote-Images/master/GitNote_Images/2019/04/30/%E5%8F%AF%E6%89%A7%E8%A1%8Cmain-1556611241864.png)
+
 我们使用反汇编工具查看一下这个可执行文件的符号信息
 
 ```C++
@@ -682,7 +684,9 @@ nm -C  main
 ```
 
 注意，这个main程序是可以被执行的
-![nm_main](/assets/nm_main_sd019w774.png)
+
+![title](https://raw.githubusercontent.com/excellentcx/GitNote-Images/master/GitNote_Images/2019/04/30/nm_main-1556611257542.png)
+
 我们可以看到，String文件中的符号名称被正确地添加到了可执行程序main中。
 
 **总结一下，链接的时候，编译器在做什么？**
