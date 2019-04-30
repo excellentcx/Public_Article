@@ -443,7 +443,7 @@ g++ -S main.cpp -o main.s
 
 我们打开main.s看一下：
 
-
+![title](https://raw.githubusercontent.com/excellentcx/GitNote-Images/master/GitNote_Images/2019/04/30/main%E6%B1%87%E7%BC%96-1556611032972.png)
 
 恩，我承认，我只学过汇编的皮毛。我表示这种反学术水平的语言我是看不懂的。
 幸运的是，本文的重点不在于此，我们只需要稍微了解这一过程即可。
@@ -463,7 +463,9 @@ g++ -c main.s -o main.o
 ```
 
 选项 -c 用来告诉编译器将汇编代码（.s文件，或者直接对源代码）转换为目标文件（.o文件）。使用-o参数输出转换好的目标文件。就像这样：
-![汇编s文件](/assets/汇编s文件.png)
+
+![title](https://raw.githubusercontent.com/excellentcx/GitNote-Images/master/GitNote_Images/2019/04/30/%E6%B1%87%E7%BC%96s%E6%96%87%E4%BB%B6-1556611058445.png)
+
 我们打开main.o看一看？？？不好意思，普通的文本查看工具已经不支持此类文件的查看了。是时候简单了解一下目标文件了
 
 ### 3.2 啥是目标文件？
@@ -488,7 +490,8 @@ nm命令可以查看目标文件中的符号信息
 nm main.o
 ```
 
-![nm命令](/assets/nm命令_hexjrwb5d.png)
+
+
 这里有很多看起来非常杂乱的符号。在解释图片中的部分内容之前，我们先说一点别的东西。
 
 nm命令的输出默认有三列，它们分别表示：
