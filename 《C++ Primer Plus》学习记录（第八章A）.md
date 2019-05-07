@@ -42,7 +42,10 @@ int* const b=&a;
 //如果有如下函数
 double cube(double a);
 //那么可以这样调用它：
-double 
+double z=cube(x+2.0);
+double z=cube(8.00);
+int k=10;
+double z=cube(k)//z
 ```
 
 对于按引用传递的参数，则有一定的限制条件
