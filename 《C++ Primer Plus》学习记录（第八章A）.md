@@ -22,7 +22,9 @@ inline double square(double x){return x*x;}
 ```C++
 int a=100;
 int & b=a;
-//上面的引用
+//上面的引用定义等价于下面这句话
+int* const b=&a;
 ```
+
 
 
