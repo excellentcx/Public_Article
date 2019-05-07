@@ -45,7 +45,9 @@ double cube(double a);
 double z=cube(x+2.0);
 double z=cube(8.00);
 int k=10;
-double z=cube(k)//z
+double z=cube(k)//这里将int类型转换为long类型
+double yo[3]={1.0,2.0,3.0}
+
 ```
 
 对于按引用传递的参数，则有一定的限制条件
