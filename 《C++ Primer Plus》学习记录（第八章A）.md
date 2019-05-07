@@ -57,6 +57,7 @@ doule z=cube(yo[1]);
 double cube(double &a);
 //无效的引用
 double z=cube(x+2.0);
-
 ```
+为什么以上引用无效？  因为
+
 
