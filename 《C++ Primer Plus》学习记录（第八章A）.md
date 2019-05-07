@@ -77,12 +77,15 @@ double z=cube(x+2.0);
 
 ```C++
 //如果有如下声明
-double referance(const double & a);
+double f(const double & a);
 //那么以下引用成立
 double a=2.0;
 double * pd= &a;
 double & r=a;
 
+double c1=f(a);
+double c2=f(rd);
+double c3=F(
 ```
 
 - 应当尽量使用const
