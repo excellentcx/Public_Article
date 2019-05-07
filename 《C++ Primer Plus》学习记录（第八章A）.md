@@ -39,17 +39,21 @@ int* const b=&a;
 传递引用的限制之处：
 对于按值传递的参数，可以选择使用多种类型的实参，例如：
 ```C++
-//如果有如下函数
+//如果定义了如下函数
 double cube(double a);
 //那么可以这样调用它：
 double z=cube(x+2.0);
 double z=cube(8.00);
 int k=10;
 double z=cube(k)//这里将int类型转换为long类型
-double yo[3]={1.0,2.0,3.0}
-
+double yo[3]={1.0,2.0,3.0};
+doule z=cube(yo[1]);
 ```
 
 对于按引用传递的参数，则有一定的限制条件
 
+```C++
+
+
+```
 
