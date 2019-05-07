@@ -92,7 +92,8 @@ double c3=f(a+0.5);
 这种设计与const的限定是不冲突的
 ```C++
 //对于一个const限定的引用而言
-const double & 
+double b=0.0;
+const double & b=a
 
 ```
 
