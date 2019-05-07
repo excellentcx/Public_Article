@@ -78,7 +78,7 @@ double z=cube(x+2.0);
 
 使用const使函数能够正确处理const和非const实参，否则将只能接受非const数据
 
-使用const
+使用const引用使函数能够正确生成并使用临时变量
 
 
 
