@@ -87,7 +87,10 @@ double c1=f(a);
 double c2=f(rd);
 double c3=f(a+0.5);
 ```
-- 为什么对于const引用，表达式可以为非
+- 为什么对于const引用，表达式可以为非左值。但是对于非const引用，表达式只能是左值呢？
+
+这种设计与const的限定是不冲突的
+
 - 应当尽量使用const
 
 
