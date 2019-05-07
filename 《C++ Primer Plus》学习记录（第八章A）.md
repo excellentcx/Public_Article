@@ -53,7 +53,10 @@ doule z=cube(yo[1]);
 对于按引用传递的参数，则有一定的限制条件
 
 ```C++
-
+//定义如下函数：
+double cube(double &a);
+//无效的引用
+double z=cube(x+2.0);
 
 ```
 
