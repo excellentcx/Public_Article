@@ -6,7 +6,7 @@
 - 使用内联函数只需要在函数声明/函数定义前添加关键字“inline”即可
 ```c++
 //声明阶段
-inline double square(double x){return 
+inline double square(double x){return x*x;}
 ```
 
 - 内联函数与宏的区别：
