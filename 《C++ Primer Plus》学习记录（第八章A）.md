@@ -85,7 +85,7 @@ double & r=a;
 
 double c1=f(a);
 double c2=f(rd);
-double c3=F(
+double c3=f(a+0.5);
 ```
 
 - 应当尽量使用const
