@@ -20,7 +20,9 @@ inline double square(double x){return x*x;}
 - 引用是处理大型结构时的最佳选择
 - 引用的本质是什么？
 ```C++
-
+int a=100;
+int & b=a;
+//上面的引用
 ```
 
 
