@@ -11,6 +11,9 @@
 
 ```C++
 //基类
+Class TableTennisPlayer
+{
+}
 
 
 ```
