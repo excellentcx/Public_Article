@@ -1,4 +1,4 @@
-# GitNote - 基于Git的免费跨平台笔记软件
+# [GitNote](https://gitnoteapp.com) - 基于Git的免费跨平台笔记软件
 
 本文即基于此软件编辑（外加VSCode支持）
 
