@@ -62,8 +62,8 @@ GitNote 是一款基于Git来管理内容的免费跨平台笔记软件，它支
 
 #### 附：一些常见的免费Git私有仓库
 
-https://github.com/ 免费版支持无限私有仓库 (微软收购)
-https://BitBucket.com/ 免费版支持私有仓库
-https://gitlab.com/ 免费版支持私有仓库
-https://gitee.com/ 免费版支持私有仓库 (国产/速度快)
-https://coding.net/ 免费版支持私有仓库 (国产/速度快)
+[GitHub，也许是这个星球上最大的同性交友网站](https://github.com/) :免费版支持无限私有仓库 (微软收购)
+[Gitlab，也许是第二大？](https://gitlab.com/) :免费版支持私有仓库
+[BitBucket](https://BitBucket.com/) :免费版支持私有仓库
+[gitee](https://gitee.com/) :免费版支持私有仓库 (国产/速度快)
+[coding](https://coding.net/) :免费版支持私有仓库 (国产/速度快)
